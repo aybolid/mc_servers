@@ -11,7 +11,7 @@ services:
 
       VERSION: "1.21.1"
       TYPE: "FABRIC"
-      MEMORY: "8G"
+      MEMORY: "12G"
 
       DIFFICULTY: "hard"
       ONLINE_MODE: false # allow cracked clients
@@ -27,6 +27,10 @@ services:
         moonlight
         jamlib
         architectury-api
+        puzzles-lib
+        cristel-lib
+        collective
+        forge-config-api-port
 
         noisium
 
@@ -34,6 +38,9 @@ services:
         fallingtree
         rightclickharvest
         dynamic-lights
+        towns-and-towers
+        villager-names-serilum
+        spawn-animations
 
         simple-voice-chat
         antique-atlas-4
@@ -43,6 +50,9 @@ services:
         fabric-seasons
         fabric-seasons-extras
         toms-storage
+        easy-magic
+        easy-anvils
+        another-furniture
 
     volumes:
       - ./data:/data # server data
