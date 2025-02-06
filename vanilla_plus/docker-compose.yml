@@ -7,11 +7,16 @@ services:
       - "25565:25565/tcp" # game port
       - "24454:24454/udp" # simple-voice-chat port
     environment:
-      EULA: "TRUE"
+      EULA: true
 
       VERSION: "1.21.1"
       TYPE: "FABRIC"
       MEMORY: "8G"
+
+      DIFFICULTY: "hard"
+      ONLINE_MODE: false # allow cracked clients
+
+      RCON_PASSWORD: "huckmeplease"
 
       MODRINTH_ALLOWED_VERSION_TYPE: beta
       MODRINTH_PROJECTS: |
