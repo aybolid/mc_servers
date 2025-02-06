@@ -1,0 +1,43 @@
+services:
+  mc:
+    image: itzg/minecraft-server
+    tty: true
+    stdin_open: true
+    ports:
+      - "25565:25565/tcp" # game port
+      - "24454:24454/udp" # simple-voice-chat port
+    environment:
+      EULA: "TRUE"
+
+      VERSION: "1.21.1"
+      TYPE: "FABRIC"
+      MEMORY: "8G"
+
+      MODRINTH_ALLOWED_VERSION_TYPE: beta
+      MODRINTH_PROJECTS: |
+        fabric-api
+        surveyor
+        cloth-config
+        cardinal-components-api
+        moonlight
+        jamlib
+        architectury-api
+
+        noisium
+
+        terralith
+        fallingtree
+        rightclickharvest
+        dynamic-lights
+
+        simple-voice-chat
+        antique-atlas-4
+        travelersbackpack
+        supplementaries
+        amendments
+        fabric-seasons
+        fabric-seasons-extras
+        toms-storage
+
+    volumes:
+      - ./data:/data # server data
