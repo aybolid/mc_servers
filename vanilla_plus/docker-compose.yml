@@ -19,7 +19,7 @@ services:
 
       RCON_PASSWORD: "huckmeplease"
 
-      MODRINTH_ALLOWED_VERSION_TYPE: beta
+      MODRINTH_ALLOWED_VERSION_TYPE: alpha
       MODRINTH_PROJECTS: |
         fabric-api
         surveyor
@@ -32,6 +32,9 @@ services:
         cristel-lib
         collective
         forge-config-api-port
+        bclib
+        wunderlib
+        worldweaver
 
         noisium
         ferrite-core
@@ -55,6 +58,10 @@ services:
         easy-anvils
         another-furniture
         yigd
+        betternether
+        betterend
+        farmers-delight-refabricated
+        fabric-seasons-delight-compat
 
     volumes:
       - ./data:/data # server data
