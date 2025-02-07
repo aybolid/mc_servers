@@ -11,7 +11,8 @@ services:
 
       VERSION: "1.21.1"
       TYPE: "FABRIC"
-      MEMORY: "12G"
+      INIT_MEMORY: "4G"
+      MAX_MEMORY: "8G"
 
       DIFFICULTY: "hard"
       ONLINE_MODE: false # allow cracked clients
@@ -33,11 +34,11 @@ services:
         forge-config-api-port
 
         noisium
+        ferrite-core
 
         terralith
         fallingtree
         rightclickharvest
-        dynamic-lights
         towns-and-towers
         villager-names-serilum
         spawn-animations
@@ -53,6 +54,7 @@ services:
         easy-magic
         easy-anvils
         another-furniture
+        yigd
 
     volumes:
       - ./data:/data # server data
