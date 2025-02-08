@@ -21,7 +21,6 @@ services:
 
       DIFFICULTY: "hard"
       ONLINE_MODE: false # allow cracked clients
-      MODE: creative
 
       RCON_PASSWORD: "huckmeplease"
 
@@ -54,6 +53,7 @@ services:
         spawn-animations
 
         simple-voice-chat
+        voice-chat-interaction
         antique-atlas-4
         travelersbackpack
         supplementaries
