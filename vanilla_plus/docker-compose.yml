@@ -35,6 +35,7 @@ services:
         bclib
         wunderlib
         worldweaver
+        balm
 
         noisium
         ferrite-core
@@ -62,6 +63,7 @@ services:
         betterend
         farmers-delight-refabricated
         fabric-seasons-delight-compat
+        waystones
 
     volumes:
       - ./data:/data # server data
