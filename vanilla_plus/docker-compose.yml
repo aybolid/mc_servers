@@ -51,6 +51,7 @@ services:
         towns-and-towers
         villager-names-serilum
         spawn-animations
+        netherportalfix
 
         simple-voice-chat
         voice-chat-interaction
